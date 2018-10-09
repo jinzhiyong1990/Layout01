@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--跟标签是线性布局-->
 <!--match_parent 控件的宽度或者高度会填满其所在的父控件-->
 <!--wrap_content 控件的大小由内容决定-->
 <!--orientation 这里设置成水平的(horizontal) 控件就都是水平的了, 反之亦然-->
@@ -11,14 +12,25 @@ center_horizontal-->
 
 
 <!--padding 用于设置该控件中内容相对于该控件的边距, 即, 内边距-->
-<!--margin 用于设置该控件相对于控件的边距, 即, 外边距-->
+<!--margin 用于设置该控件相对于控件的边距, 即, 外边距, 一般来讲, 外边距四周都是一样的-->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_marginRight="30dp"
-
+    android:layout_marginLeft="100dp"
+    android:layout_marginBottom="60dp"
+    android:layout_marginTop="30dp"
     android:background="#ff00ff">
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="你好边距"
+        android:background="#004455"
+        android:paddingLeft="50dp"
+        android:paddingTop="50dp"
+        />
 
 
     <TextView

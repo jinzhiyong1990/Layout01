@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!--
+
+距离单位:
+对于textSize来说, 使用sp, 会使得字体跟随系统变化
+对于控件设置宽高: 使用dp
+
+
+-->
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello, World"
+        android:textSize="20sp"
+
+        />
+
+</LinearLayout>
