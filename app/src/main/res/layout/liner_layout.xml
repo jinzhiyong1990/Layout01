@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--match_parent 控件的宽度或者高度会填满其所在的父控件-->
+<!--wrap_content 控件的大小由内容决定-->
+<!--orientation 这里设置成水平的(horizontal) 控件就都是水平的了, 反之亦然-->
+
+
+<!--android:gravity 用于设置该控件中内容相对于该控件的对齐方式-->
+<!--android:layout_gravity 用户设置该控件相对于父控件的对齐方式-->
+<!--如果当前线性布局的方向为垂直方向, 那么layout_gravity中使用的对齐方式, 只能是水平位置对齐(left, right
+center_horizontal-->
+
+
+<!--padding 用于设置该控件中内容相对于该控件的边距, 即, 内边距-->
+<!--margin 用于设置该控件相对于控件的边距, 即, 外边距-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginRight="30dp"
+
+    android:background="#ff00ff">
+
+
+    <TextView
+        android:layout_width="249dp"
+        android:layout_height="66dp"
+        android:background="#0000ff"
+        android:text="layout基础实战-线性布局" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView02"
+        android:background="#443399"
+
+        />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="top"
+        android:gravity="top|right"
+        android:background="#998877"
+        android:layout_gravity="right"
+
+
+        />
+
+
+
+</LinearLayout>
